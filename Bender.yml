@@ -1,0 +1,16 @@
+package:
+  name: dummy_vip
+
+
+  dependencies:
+    common_cells: { git: "https://github.com/pulp-platform/common_cells.git", version: 1.21.0 }
+
+
+
+  sources:
+    - include_dirs:
+      - include
+    - target: simulation
+      files:
+      - rtl/dummy_submodule.sv
+      - rtl/dummy_top.sv
